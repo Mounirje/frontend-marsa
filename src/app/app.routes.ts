@@ -1,3 +1,28 @@
 import { Routes } from '@angular/router';
+import { MarchandiseComponent } from './components/marchandise.component';
+import { ArretAffectationComponent } from './components/arret-affectation.component';
+import { ArretExploitationComponent } from './components/arret-exploitation.component';
+import { AutreEquipementComponent } from './components/autre-equipement.component';
+import { EnginAffectationComponent } from './components/engin-affectation.component';
+import { EnginLevageComponent } from './components/engin-levage.component';
+import { EquipementAffectationComponent } from './components/equipement-affectation.component';
+import { EscaleComponent } from './components/escale.component';
+import { MarchandiseAffectationComponent } from './components/marchandise-affectation.component';
+import { PersonnelComponent } from './components/personnel.component';
+import { PersonnelAffectationComponent } from './components/personnel-affectation.component';
+import { SousTraitantComponent } from './components/sous-traitant.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: 'marchandises', component: MarchandiseComponent },
+  { path: 'arrets-affectation', component: ArretAffectationComponent },
+  { path: 'arrets-exploitation', component: ArretExploitationComponent },
+  { path: 'autres-equipements', component: AutreEquipementComponent },
+  { path: 'engins-affectation', component: EnginAffectationComponent },
+  { path: 'engins-levage', component: EnginLevageComponent },
+  { path: 'equipements-affectation', component: EquipementAffectationComponent },
+  { path: 'escales', component: EscaleComponent },
+  { path: 'marchandises-affectation', component: MarchandiseAffectationComponent },
+  { path: 'personnels', component: PersonnelComponent },
+  { path: 'personnels-affectation', component: PersonnelAffectationComponent },
+  { path: 'sous-traitants', component: SousTraitantComponent },
+];
