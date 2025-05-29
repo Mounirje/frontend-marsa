@@ -11,8 +11,10 @@ import { MarchandiseAffectationComponent } from './components/marchandise-affect
 import { PersonnelComponent } from './components/personnel.component';
 import { PersonnelAffectationComponent } from './components/personnel-affectation.component';
 import { SousTraitantComponent } from './components/sous-traitant.component';
+import { HomeComponent } from './components/home.component';
 
 export const routes: Routes = [
+  { path: '', component: HomeComponent },
   { path: 'marchandises', component: MarchandiseComponent },
   { path: 'arrets-affectation', component: ArretAffectationComponent },
   { path: 'arrets-exploitation', component: ArretExploitationComponent },

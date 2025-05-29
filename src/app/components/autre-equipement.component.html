@@ -1,0 +1,47 @@
+<div class="container mt-4">
+  <h2>{{ editMode ? 'Modifier' : 'Ajouter' }} un Équipement</h2>
+  <form (ngSubmit)="addOrUpdateEquipement()" #formEquipement="ngForm">
+    <div class="mb-3">
+      <label for="code">Code Équipement</label>
+      <input id="code" type="text" class="form-control" [(ngModel)]="newEquipement.codeEquipement" name="code" required>
+    </div>
+    <div class="mb-3">
+      <label for="libelle">Libellé</label>
+      <input id="libelle" type="text" class="form-control" [(ngModel)]="newEquipement.libelleEquipement" name="libelle" required>
+    </div>
+    <div class="mb-3">
+      <label for="engin">ID Engin Affectation</label>
+      <input id="engin" type="number" class="form-control" [(ngModel)]="newEquipement.enginAffectation.id" name="engin" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary me-2">{{ editMode ? 'Mettre à jour' : 'Ajouter' }}</button>
+    <button *ngIf="editMode" type="button" (click)="resetForm()" class="btn btn-secondary">Annuler</button>
+  </form>
+
+  <hr>
+
+  <h2>Liste des Équipements</h2>
+  <table class="table table-bordered mt-3">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Code</th>
+      <th>Libellé</th>
+      <th>ID Engin Affectation</th>
+      <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let e of autresEquipements">
+      <td>{{ e.id }}</td>
+      <td>{{ e.codeEquipement }}</td>
+      <td>{{ e.libelleEquipement }}</td>
+      <td>{{ e.enginAffectation?.id }}</td>
+      <td>
+        <button class="btn btn-warning btn-sm me-2" (click)="editEquipement(e)">Modifier</button>
+        <button class="btn btn-danger btn-sm" (click)="deleteEquipement(e.id)">Supprimer</button>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+</div>

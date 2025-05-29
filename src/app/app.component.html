@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary px-4">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary px-4 fixed-top">
   <a class="navbar-brand" routerLink="/" style="cursor: pointer;">Marsa Maroc</a>
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
           aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,45 +8,45 @@
   <div class="collapse navbar-collapse" id="navbarContent">
     <ul class="navbar-nav ms-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/marchandises" routerLinkActive="active" style="cursor: pointer;">Marchandises</a>
+        <a class="nav-link" routerLink="/marchandises" routerLinkActive="active">Marchandises</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/autres-equipements" routerLinkActive="active" style="cursor: pointer;">Autres Équipements</a>
+        <a class="nav-link" routerLink="/autres-equipements" routerLinkActive="active">Autres Équipements</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/escales" routerLinkActive="active" style="cursor: pointer;">Escales</a>
+        <a class="nav-link" routerLink="/escales" routerLinkActive="active">Escales</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/personnels" routerLinkActive="active" style="cursor: pointer;">Personnels</a>
+        <a class="nav-link" routerLink="/personnels" routerLinkActive="active">Personnels</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/sous-traitants" routerLinkActive="active" style="cursor: pointer;">Sous-traitants</a>
+        <a class="nav-link" routerLink="/sous-traitants" routerLinkActive="active">Sous-traitants</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/engins-affectation" routerLinkActive="active" style="cursor: pointer;">Engins Affectation</a>
+        <a class="nav-link" routerLink="/engins-affectation" routerLinkActive="active">Engins Affectation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/engins-levage" routerLinkActive="active" style="cursor: pointer;">Engins Levage</a>
+        <a class="nav-link" routerLink="/engins-levage" routerLinkActive="active">Engins Levage</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/marchandises-affectation" routerLinkActive="active" style="cursor: pointer;">Marchandises Affectation</a>
+        <a class="nav-link" routerLink="/marchandises-affectation" routerLinkActive="active">Marchandises Affectation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/personnels-affectation" routerLinkActive="active" style="cursor: pointer;">Personnels Affectation</a>
+        <a class="nav-link" routerLink="/personnels-affectation" routerLinkActive="active">Personnels Affectation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/arrets-exploitation" routerLinkActive="active" style="cursor: pointer;">Arrêts Exploitation</a>
+        <a class="nav-link" routerLink="/arrets-exploitation" routerLinkActive="active">Arrêts Exploitation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/arrets-affectation" routerLinkActive="active" style="cursor: pointer;">Arrêts Affectation</a>
+        <a class="nav-link" routerLink="/arrets-affectation" routerLinkActive="active">Arrêts Affectation</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/equipements-affectation" routerLinkActive="active" style="cursor: pointer;">Équipements Affectation</a>
+        <a class="nav-link" routerLink="/equipements-affectation" routerLinkActive="active">Équipements Affectation</a>
       </li>
     </ul>
   </div>
 </nav>
 
-<div class="container mt-4">
+<div class="main-content">
   <router-outlet></router-outlet>
 </div>
